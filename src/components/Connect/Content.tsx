@@ -9,9 +9,9 @@ const Content = () => {
           <div className="inner-wrapper">
             <h3 className="connect-name">Partnership.</h3>
 
-            <div className="email-area connect-sub">
+            <div className="email-area ">
               <a href="mailto:loocreative@playlooc.com" title="">
-                <p>loocreative@playlooc.com</p>
+                <p className="connect-sub">loocreative@playlooc.com</p>
                 <div className="mail-icon">
                   <p>✉</p>
                 </div>
@@ -21,9 +21,9 @@ const Content = () => {
         </div>
         <div className="inner">
           <h3 className="connect-name">Recruiting.</h3>
-          <div className="email-area connect-sub">
+          <div className="email-area ">
             <a href="mailto:loocreative@playlooc.com" title="">
-              <p>loocreative@playlooc.com</p>
+              <p className="connect-sub">loocreative@playlooc.com</p>
               <div className="mail-icon">
                 <p>✉</p>
               </div>
