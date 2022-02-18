@@ -1,0 +1,98 @@
+@import '../abstracts';
+
+.contact-container {
+  height: 100vh;
+  .contact-content {
+    height: 100%;
+
+    @include responsive(medium) {
+      height: 80%;
+      overflow: auto;
+      position: relative;
+      top: 150px;
+    }
+
+    @include responsive(medium) {
+      top: 115px;
+    }
+    h1 {
+      font-family: 'Montserrat-Bold';
+      margin-bottom: 10px;
+      font-size: 40px;
+      color: $black;
+      position: relative;
+      text-align: center;
+      padding: 60px 0;
+      user-select: none;
+      cursor: text;
+      visibility: hidden;
+    }
+    .box-map {
+      height: 81%;
+      display: flex;
+      @include responsive(medium) {
+        display: block;
+      }
+    }
+    .map-child {
+      width: 50%;
+      @include responsive(medium) {
+        width: 100%;
+      }
+      iframe,
+      .info {
+        width: 100%;
+        height: 100%;
+      }
+      .info {
+        background: #1d1d1d;
+        display: flex;
+        box-sizing: border-box;
+        flex-direction: column;
+        min-height: 396px;
+        justify-content: space-between;
+
+        .top {
+          font-size: 16px;
+          font-weight: 600;
+          color: white;
+          padding: 12.8%;
+          @media (max-width: 1311px) {
+            padding-top: 18.8%;
+            padding-left: 18.8%;
+          }
+          p {
+            font-weight: 700;
+            user-select: none;
+            cursor: text;
+          }
+        }
+        .bottom {
+          padding: 12.8%;
+          @media (max-width: 1311px) {
+            padding-bottom: 18.8%;
+            padding-right: 18.8%;
+          }
+          color: white;
+          text-align: end;
+          .title {
+            user-select: none;
+            cursor: text;
+            font-size: 12px !important;
+          }
+          .hidden {
+            width: 100%;
+            height: 25px;
+            background-color: transparent;
+          }
+
+          a {
+            font-weight: 700;
+            font-size: 14px;
+            user-select: none;
+          }
+        }
+      }
+    }
+  }
+}

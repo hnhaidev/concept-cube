@@ -1,0 +1,214 @@
+@import '../abstracts';
+
+.introduce {
+  position: relative;
+  background-color: $main1;
+  width: 100%;
+  height: 100%;
+
+  &-logo {
+    position: absolute;
+    top: 80px;
+    left: 145px;
+
+    @include responsive(large) {
+      left: 100px;
+    }
+
+    @include responsive(medium) {
+      left: 50px;
+    }
+  }
+
+  &-linkconnect {
+    position: absolute;
+    top: 80px;
+    right: 175px;
+    @include responsive(medium) {
+      right: 165px;
+    }
+    @include responsive(small) {
+      right: 50px;
+      top: 120px;
+    }
+
+    .link {
+      color: $main2;
+      font-size: 13px;
+      font-family: 'Montserrat-Medium';
+      line-height: 0.92;
+      cursor: pointer;
+    }
+  }
+
+  &-company {
+    position: absolute;
+    bottom: 80px;
+    left: 145px;
+
+    @include responsive(large) {
+      left: 100px;
+    }
+
+    @include responsive(medium) {
+      left: 50px;
+    }
+
+    p {
+      color: $main2;
+      font-size: 13px;
+      font-family: 'Montserrat-Medium';
+      line-height: 0.92;
+    }
+  }
+
+  &-bg {
+    position: relative;
+    width: 100%;
+    height: 100%;
+
+    .bg {
+      position: absolute;
+      img {
+        height: 100%;
+        width: 210px;
+        object-fit: cover;
+
+        @include responsive(large) {
+          width: 200px;
+        }
+
+        @include responsive(medium) {
+          width: 150px;
+        }
+        @include responsive(small) {
+          width: 100px;
+        }
+      }
+    }
+
+    .bg-img-1 {
+      bottom: 0;
+      left: 0;
+      img {
+        height: 578px;
+
+        @include responsive(large) {
+          height: 550px;
+        }
+
+        @include responsive(medium) {
+          height: 500px;
+        }
+        @include responsive(small) {
+          height: 450px;
+        }
+      }
+    }
+
+    .bg-img-2 {
+      top: 0;
+      left: 40%;
+      img {
+        height: 505px;
+      }
+    }
+
+    .bg-img-3 {
+      bottom: 0;
+      right: 20%;
+      img {
+        height: 770px;
+
+        @include responsive(large) {
+          height: 750px;
+        }
+
+        @include responsive(medium) {
+          height: 700px;
+        }
+        @include responsive(small) {
+          height: 650px;
+        }
+      }
+    }
+
+    .bg-img-4 {
+      top: 50%;
+      right: 30%;
+      transform: translateY(-50%);
+      img {
+        height: 790px;
+        @include responsive(large) {
+          height: 750px;
+        }
+
+        @include responsive(medium) {
+          height: 700px;
+        }
+        @include responsive(small) {
+          height: 650px;
+        }
+      }
+    }
+
+    .bg-img-5 {
+      bottom: 0;
+      right: 0;
+      img {
+        height: 591px;
+
+        @include responsive(large) {
+          height: 560px;
+        }
+
+        @include responsive(medium) {
+          height: 510px;
+        }
+        @include responsive(small) {
+          height: 460px;
+        }
+      }
+    }
+  }
+
+  &-content {
+    position: absolute;
+    top: 50%;
+    left: 145px;
+    transform: translateY(-50%);
+
+    @include responsive(large) {
+      left: 100px;
+    }
+
+    @include responsive(medium) {
+      left: 50px;
+    }
+
+    h1 {
+      color: $main2;
+      font-family: 'Montserrat-SemiBold';
+      text-align: left;
+      font-size: 200.5px;
+      line-height: 1.1;
+      white-space: pre-line;
+
+      @include responsive(large) {
+        font-size: 120px;
+      }
+
+      @include responsive(medium) {
+        font-size: 100px;
+      }
+
+      @include responsive(small) {
+        font-size: 80px;
+      }
+      @include responsive(xsmall) {
+        font-size: 50px;
+        line-height: 1.6;
+      }
+    }
+  }
+}

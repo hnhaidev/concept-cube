@@ -1,0 +1,93 @@
+@import '../abstracts';
+
+.teams {
+  width: 100vw;
+  height: 100vh;
+  background: url('../../assets/images/teams-bg.png');
+  background-position: center;
+  position: relative;
+  .teams-wrapper {
+    width: 70%;
+    height: 100%;
+    z-index: 0;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    margin: 0 auto;
+    color: $white;
+    display: flex;
+    align-items: center;
+    padding: 0;
+    z-index: 5;
+    transition: all 0.2s;
+    & > div {
+      width: 100%;
+    }
+    header {
+      position: sticky;
+      top: 0;
+      left: 0;
+      h1 {
+        font-size: 80px;
+        font-family: 'Montserrat-bold';
+        text-align: center;
+        margin-bottom: 50px;
+        transition: all 0.2s;
+        user-select: none;
+        color: $white;
+        cursor: text;
+
+        @include responsive(medium) {
+          font-size: 40px;
+        }
+      }
+    }
+    .list-wrapper {
+      @media (max-width: 780px) {
+        max-height: 80vh;
+        overflow: auto;
+      }
+    }
+    .list-team {
+      display: flex;
+      flex-wrap: wrap;
+      margin-top: 100px;
+      @include responsive(medium) {
+        margin-top: 0;
+      }
+      .item {
+        width: 25%;
+        padding: 1.5%;
+        box-sizing: border-box;
+        @media (max-width: 1610px) {
+          width: calc(100% / 3);
+          padding: 1.6%;
+        }
+
+        @include responsive(medium) {
+          width: 100%;
+          margin-bottom: 50px;
+        }
+        h3 {
+          font-size: 24px;
+          font-family: 'Montserrat-bold';
+          margin-bottom: 35px;
+          padding-left: 1.5%;
+        }
+        ul > li {
+          font-family: 'Montserrat-Medium';
+          box-sizing: border-box;
+          padding-left: 3%;
+          display: flex;
+          align-items: center;
+          height: 35px;
+          font-size: 12px;
+          margin: 0;
+          opacity: 1;
+          transition: all 0.1s;
+        }
+      }
+    }
+  }
+}
