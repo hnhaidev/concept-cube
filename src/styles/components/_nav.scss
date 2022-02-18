@@ -34,6 +34,9 @@
     @include responsive(medium) {
       right: 50px;
     }
+    @include responsive(small) {
+      top: 52px;
+    }
   }
 
   .changeLangMemnu {
@@ -84,6 +87,9 @@
     user-select: none;
     @include responsive(medium) {
       right: 50px;
+    }
+    @include responsive(small) {
+      top: 30px;
     }
 
     .btn-toggle {

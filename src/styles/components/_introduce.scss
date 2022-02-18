@@ -18,6 +18,9 @@
     @include responsive(medium) {
       left: 50px;
     }
+    @include responsive(small) {
+      top: 30px;
+    }
   }
 
   &-linkconnect {
@@ -29,7 +32,7 @@
     }
     @include responsive(small) {
       right: 50px;
-      top: 120px;
+      top: 90px;
     }
 
     .link {
