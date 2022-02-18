@@ -21,6 +21,7 @@ const Nav = () => {
       <nav role="navigation">
         <div id="menuToggle">
           <div
+            id="changeLang"
             className={`changeLangWrapper ${
               ['/works', '/contact'].includes(pathname.toLocaleLowerCase()) ? 'cl-black' : ''
             }`}
@@ -39,6 +40,7 @@ const Nav = () => {
             </div>
           </div>
           <div
+            id="btn-toggle"
             className={`${openMenu ? 'btn-toggle open' : 'btn-toggle'} ${
               ['/works', '/contact'].includes(pathname.toLocaleLowerCase()) ? 'cl-black' : ''
             }`}

@@ -6,12 +6,25 @@ const elHidden = (listEle: string[]) => {
     })
   );
 };
+const elDot = document.getElementById('fp-nav');
+const elBtnToggle = document.getElementById('btn-toggle');
+const elChangeLang = document.getElementById('changeLang');
+const changeColor = () => {
+  elDot?.classList.add('changeColor');
+  elBtnToggle?.classList.add('changeColor');
+  elChangeLang?.classList.add('changeColor');
+};
+const changeColor02 = () => {
+  elDot?.classList.remove('changeColor');
+  elBtnToggle?.classList.remove('changeColor');
+  elChangeLang?.classList.remove('changeColor');
+};
 
 const onLeave = (origin: any, destination: any, direction: any) => {
   switch (destination.index) {
     case 0:
       elHidden(['.item-slide', '.service-list', '.history-container', '.connect-content']);
-
+      changeColor02();
       break;
     case 1:
       elHidden([
@@ -23,6 +36,7 @@ const onLeave = (origin: any, destination: any, direction: any) => {
         '.history-container',
         '.connect-content',
       ]);
+      changeColor02();
       break;
     case 2:
       elHidden([
@@ -34,6 +48,7 @@ const onLeave = (origin: any, destination: any, direction: any) => {
         '.history-container',
         '.connect-content',
       ]);
+      changeColor02();
       break;
     case 3:
       elHidden([
@@ -45,6 +60,7 @@ const onLeave = (origin: any, destination: any, direction: any) => {
         '.service-list',
         '.connect-content',
       ]);
+      changeColor();
       break;
     case 4:
       elHidden([
@@ -56,6 +72,7 @@ const onLeave = (origin: any, destination: any, direction: any) => {
         '.service-list',
         '.history-container',
       ]);
+      changeColor02();
       break;
   }
 };

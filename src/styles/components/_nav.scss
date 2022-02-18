@@ -14,9 +14,14 @@
     top: 22px;
     right: 0px;
 
-    &.cl-black {
+    &.cl-black,
+    &.changeColor {
       .changeLang {
         color: $black_bland;
+
+        &.select {
+          color: $main1 !important;
+        }
       }
     }
   }
@@ -116,7 +121,8 @@
         }
       }
 
-      &.cl-black {
+      &.cl-black,
+      &.changeColor {
         span {
           background: $black;
         }

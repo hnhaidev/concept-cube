@@ -60,6 +60,14 @@
   background-color: $main1 !important;
 }
 
-.note {
-  color: $main1;
+#fp-nav.changeColor ul li a span {
+  background-color: $main1 !important;
+}
+
+#fp-nav.changeColor ul li a.active span {
+  background-color: $white !important;
+}
+
+#fp-nav.changeColor ul li a:hover span {
+  background-color: $white !important;
 }
