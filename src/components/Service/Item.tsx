@@ -38,7 +38,7 @@ const Item: FC<ItemProps> = ({ item }) => {
 
   return (
     <div
-      className={`item ${isHover && 'hover'}`}
+      className={`item item-${item.id} ${isHover && 'hover'}`}
       onMouseOver={() => setIsHover(true)}
       onMouseOut={() => setIsHover(false)}
     >

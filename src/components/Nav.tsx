@@ -20,7 +20,11 @@ const Nav = () => {
     <div className="menuAreaWrapper">
       <nav role="navigation">
         <div id="menuToggle">
-          <div className="changeLangWrapper">
+          <div
+            className={`changeLangWrapper ${
+              ['/works', '/contact'].includes(pathname.toLocaleLowerCase()) ? 'cl-black' : ''
+            }`}
+          >
             <div
               onClick={() => handleLanguage('ko')}
               className={`changeLang ko ${i18n.language === 'ko' ? 'select' : ''}`}
@@ -35,7 +39,9 @@ const Nav = () => {
             </div>
           </div>
           <div
-            className={`${openMenu ? 'btn-toggle open' : 'btn-toggle'}`}
+            className={`${openMenu ? 'btn-toggle open' : 'btn-toggle'} ${
+              ['/works', '/contact'].includes(pathname.toLocaleLowerCase()) ? 'cl-black' : ''
+            }`}
             onClick={handleToggleMenu}
           >
             <span></span>

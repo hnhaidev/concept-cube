@@ -9,8 +9,6 @@ interface CardProps {
 const Card: React.FC<CardProps> = ({ item, setIdItem, setOpenPopup }) => {
   const { img, desc, partners, id } = item;
 
-  console.log(item);
-
   const handleSetId = (id: any) => {
     setIdItem(id);
     setOpenPopup(true);

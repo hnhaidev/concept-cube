@@ -13,6 +13,12 @@
     position: absolute;
     top: 22px;
     right: 0px;
+
+    &.cl-black {
+      .changeLang {
+        color: $black_bland;
+      }
+    }
   }
 
   .changeLangWrapperMenu {
@@ -35,7 +41,7 @@
     }
 
     &.select {
-      color: $main2;
+      color: $main2 !important;
     }
   }
 
@@ -49,7 +55,7 @@
     }
 
     &.select {
-      color: $main2;
+      color: $main2 !important;
     }
   }
 
@@ -102,11 +108,17 @@
         span {
           opacity: 1;
           transform: rotate(45deg) translate(-10px, -10px);
-          background: $white;
+          background: $white !important;
 
           &:nth-child(2) {
             transform: rotate(-45deg) translate(-3px, 3px);
           }
+        }
+      }
+
+      &.cl-black {
+        span {
+          background: $black;
         }
       }
     }
@@ -202,249 +214,3 @@
     }
   }
 }
-
-//
-
-// @media (max-width: 1024px) {
-//   .menuAreaWrapper {
-//     .changeLangWrapperMenu {
-//       right: -15px;
-//     }
-//     left: 0;
-//     #menu {
-//       width: 460px;
-//       li {
-//         font-size: 36px;
-//       }
-//     }
-//     #menuToggle {
-//       top: 50px;
-//       right: 60px;
-//     }
-//     .infoWrapper {
-//       #adress {
-//         font-size: 14px;
-//         line-height: 20px;
-//       }
-//     }
-//   }
-// }
-
-// @media (min-width: 781px) {
-//   #menu {
-//     width: 100%;
-
-//     li {
-//       font-size: 35px;
-//     }
-//   }
-
-//   .infoWrapper {
-//     bottom: 60px;
-//   }
-// }
-
-// @media (max-width: 781px) {
-//   .menuAreaWrapper {
-//     #menu {
-//       width: 60%;
-//       padding-left: 30px;
-//       padding-top: 200px;
-//       li {
-//         font-size: 25px;
-//         font-family: Montserrat-regular;
-//       }
-//     }
-//     #menuToggle {
-//       top: 50px;
-//       right: 60px;
-//     }
-//     .infoWrapper {
-//       #adress {
-//         font-size: 15px;
-//       }
-//     }
-//   }
-
-//   .infoWrapper {
-//     bottom: 60px;
-//   }
-// }
-// @media (max-width: 500px) {
-//   .menuAreaWrapper {
-//     .changeLangMemnu.en {
-//       margin-right: 55px;
-//     }
-//   }
-// }
-// @media (max-width: 400px) {
-//   .menuAreaWrapper {
-//     .changeLangMemnu.en {
-//       margin-right: 50px;
-//     }
-//     #menu {
-//       width: 60%;
-//       padding-left: 30px;
-//       padding-top: 90px;
-//       li {
-//         font-size: 20px;
-//         font-weight: 400;
-//         font-family: Montserrat-regular;
-//       }
-//     }
-//     #menuToggle {
-//       top: 40px;
-//       right: 20px;
-//     }
-//     .infoWrapper {
-//       #adress {
-//         padding-top: 25px;
-//         font-size: 10px;
-//       }
-//     }
-//   }
-
-//   .infoWrapper {
-//     bottom: 60px;
-//   }
-// }
-
-// @media (max-width: 780px) {
-//   #menu {
-//     width: 60%;
-
-//     li {
-//       font-size: 15px;
-//     }
-
-//     .infoWrapper {
-//       bottom: 80px;
-//     }
-//   }
-// }
-
-// @media (min-width: 781px) {
-//   #menu {
-//     width: 460px;
-//     padding: 50px;
-//     padding-top: 150px;
-//     padding-left: 32px;
-//     li {
-//       font-size: 36px;
-//     }
-//   }
-
-//   .infoWrapper {
-//     bottom: 60px;
-//   }
-// }
-
-// @media (max-width: 780px) {
-//   .menuAreaWrapper {
-//     #menuToggle {
-//       top: 50px;
-//       right: 50px;
-//     }
-//     .changeLangWrapperMenu {
-//       right: -25px;
-//     }
-//   }
-//   #menu {
-//     padding: 100px;
-//     padding-top: 100px;
-//     width: 60%;
-
-//     li {
-//       font-size: 30px;
-//     }
-
-//     .infoWrapper {
-//       bottom: 15px;
-//       #adress {
-//         padding-top: 10px;
-//         font-size: 12px;
-//       }
-//     }
-//   }
-// }
-
-// @media (max-width: 681px) {
-//   .menuAreaWrapper {
-//     #menuToggle {
-//       top: 50px;
-//       right: 50px;
-//     }
-//     .changeLangWrapperMenu {
-//       right: -25px;
-//     }
-//   }
-// }
-
-// @media (max-height: 640px) {
-//   #menu {
-//     padding: 50px;
-//     padding-top: 60px;
-
-//     li {
-//       font-size: 10px;
-//     }
-//   }
-// }
-
-// @media (max-height: 550px) {
-//   #menu {
-//     padding-top: 60px;
-
-//     li {
-//       font-size: 10px;
-//     }
-//   }
-// }
-
-// @media (max-width: 768px) {
-//   .menuAreaWrapper {
-//     .changeLangWrapper {
-//       top: 10px;
-//     }
-//     .changeLangWrapperMenu {
-//       right: -15px;
-//     }
-//   }
-// }
-
-// @media (max-width: 414px) {
-//   .menuAreaWrapper {
-//     .changeLangWrapper {
-//       top: 10px;
-//     }
-//     .changeLangWrapperMenu {
-//       right: -10px;
-//     }
-//   }
-// }
-// @media (max-width: 411px) {
-//   .menuAreaWrapper {
-//     .changeLangWrapper {
-//       top: 10px;
-//     }
-//     .changeLangWrapperMenu {
-//       right: -5px;
-//     }
-//   }
-// }
-
-// @media (max-width: 360px) {
-//   .menuAreaWrapper {
-//     .changeLangWrapper {
-//       top: 10px;
-//     }
-//   }
-// }
-
-// @media (max-width: 320px) {
-//   .menuAreaWrapper {
-//     .changeLangWrapper {
-//       top: 10px;
-//     }
-//   }
-// }

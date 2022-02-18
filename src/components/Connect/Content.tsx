@@ -7,9 +7,9 @@ const Content = () => {
       <div className="connect-contact">
         <div className="inner">
           <div className="inner-wrapper">
-            <h3>Partnership.</h3>
+            <h3 className="connect-name">Partnership.</h3>
 
-            <div className="email-area">
+            <div className="email-area connect-sub">
               <a href="mailto:loocreative@playlooc.com" title="">
                 <p>loocreative@playlooc.com</p>
                 <div className="mail-icon">
@@ -20,8 +20,8 @@ const Content = () => {
           </div>
         </div>
         <div className="inner">
-          <h3>Recruiting.</h3>
-          <div className="email-area">
+          <h3 className="connect-name">Recruiting.</h3>
+          <div className="email-area connect-sub">
             <a href="mailto:loocreative@playlooc.com" title="">
               <p>loocreative@playlooc.com</p>
               <div className="mail-icon">
@@ -31,8 +31,8 @@ const Content = () => {
           </div>
         </div>
         <div className="inner">
-          <h3>Learn more.</h3>
-          <h4>
+          <h3 className="connect-name">Learn more.</h3>
+          <h4 className="connect-sub">
             <Link to={'/works'}>Learn more about us.{'>'}</Link>
           </h4>
         </div>
